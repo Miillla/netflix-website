@@ -1,5 +1,6 @@
 import { ArrowDropDown, Notifications, Search } from "@mui/icons-material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 const NavBar = () => {
@@ -36,7 +37,7 @@ const NavBar = () => {
             <ArrowDropDown className="icon" />
             <div className="options">
               <span>Setting</span>
-              <span>Logout</span>
+              <Link to="/login">Logout</Link>
             </div>
           </div>
         </div>
